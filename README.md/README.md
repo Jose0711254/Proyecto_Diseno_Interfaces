@@ -3,9 +3,9 @@
 Este repositorio contiene el proyecto de diseño y maquetación web para una comunidad tecnológica local sin ánimo de lucro. El desarrollo se ha realizado en equipo aplicando la metodología Scrum a lo largo de dos sprints.
 
 ## 👥 Integrantes
-* [Nombre 1] ([@LucasMouris](https://github.com))
-* [Nombre 2] ([@IkerRodriguez](https://github.com))
-* [Nombre 3] ([@JoseLuisRey](https://github.com))
+* [Nombre 1] ([@LucasMouris](https://github.com/Yate9))
+* [Nombre 2] ([@IkerRodriguez](https://github.com/ikerrguez))
+* [Nombre 3] ([@JoseLuisRey](https://github.com/Jose0711254))
 
 
 ---

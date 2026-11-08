@@ -1,0 +1,78 @@
+/* Paleta de la guía de estilos. */
+:root {
+  --papel: #FFF9ED;
+  --tinta: #24152F;
+  --violeta: #6728B8;
+  --lima: #D8EF75;
+  --rosa: #F4C7D8;
+}
+
+/* Tipografía y fondo comunes. Bootstrap se encarga de la rejilla. */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--tinta);
+  background: var(--papel);
+  line-height: 1.5;
+}
+
+/* Jerarquía tipográfica adaptable a pantallas pequeñas. */
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+/* Encabezados coherentes con Arial Bold. */
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* Detalle de terminal de la identidad. */
+.eyebrow {
+  font-family: Consolas, monospace;
+  color: var(--violeta);
+  font-size: .875rem;
+}
+
+/* Logotipo proporcionado sin deformación. */
+.navbar-brand img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* El ancho del logo deja espacio al botón del menú a 360 px. */
+.navbar-brand {
+  max-width: calc(100% - 70px);
+}
+
+/* Enlaces de navegación con área cómoda para pulsar. */
+.navbar .nav-link {
+  color: var(--tinta);
+  min-height: 44px;
+  padding: .75rem;
+}
+
+/* La página actual se distingue también por el subrayado. */
+.navbar .nav-link.active {
+  color: var(--violeta);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+
+/* Acción principal y sus estados según la guía. */
+.btn-primary {
+  --bs-btn-bg: var(--violeta);
+  --bs-btn-border-color: var(--violeta);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: var(--tinta);
+  --bs-btn-hover-border-color: var(--tinta);
+  --bs-btn-active-bg: var(--tinta);
+  --bs-btn-active-border-color: var(--tinta);
+  min-height: 44px;
+  padding: .65rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+}

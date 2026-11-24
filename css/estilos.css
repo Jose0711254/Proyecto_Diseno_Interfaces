@@ -173,6 +173,31 @@ summary:focus-visible {
   font-weight: 700;
 }
 
+/* Buscador de eventos con los mismos estados de foco que los formularios de Únete. */
+.event-filters {
+  background: #fff;
+  border: 1px solid var(--tinta);
+  border-radius: 16px;
+}
+
+.event-filters .form-label {
+  font-weight: 700;
+}
+
+.event-filters .form-control,
+.event-filters .form-select {
+  min-height: 44px;
+  border-color: var(--tinta);
+}
+
+.event-filters input:focus-visible,
+.event-filters select:focus-visible {
+  outline: 3px solid var(--violeta);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+
 /* Botón secundario con altura de pulsación coherente. */
 .btn-outline-dark {
   min-height: 44px;

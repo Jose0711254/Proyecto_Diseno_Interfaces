@@ -33,7 +33,7 @@ El desarrollo se ha realizado en equipo de tres aplicando la metodología ágil 
 
 ## 📁 Estructura de Carpetas
 ```text
-nombre-comunidad/
+nodo-norte/
 ├── index.html
 ├── eventos.html
 ├── unete.html
@@ -46,5 +46,6 @@ nombre-comunidad/
 ├── docs/
 │   ├── fichas-practica.pdf
 │   ├── guia-estilos.pdf
+│   ├── moodboard.pdf
 │   └── wireframes/
 └── README.md

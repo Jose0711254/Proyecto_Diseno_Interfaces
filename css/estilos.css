@@ -5,6 +5,28 @@
   --violeta: #6728B8;
   --lima: #D8EF75;
   --rosa: #F4C7D8;
+  --superficie: #fff;
+  --borde: var(--tinta);
+  --texto-sobre-acento: #fff;
+}
+
+:root[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --papel: #201826;
+  --tinta: #F7EFFC;
+  --violeta: #D9B4FF;
+  --lima: #2B361C;
+  --rosa: #3C2639;
+  --superficie: #2B2234;
+  --borde: #A495B0;
+  --texto-sobre-acento: var(--papel);
+
+  --bs-body-bg: var(--superficie);
+  --bs-body-color: var(--tinta);
+  --bs-emphasis-color: var(--tinta);
+  --bs-emphasis-color-rgb: 247, 239, 252;
+  --bs-secondary-color: #D6C9DF;
+  --bs-border-color: var(--borde);
 }
 
 /* Tipografía y fondo comunes. Bootstrap se encarga de la rejilla. */
@@ -42,9 +64,14 @@ h3 {
   height: auto;
 }
 
-/* El ancho del logo deja espacio al botón del menú a 360 px. */
+/* Mantiene el logotipo, el selector de tema y el menú en la misma fila. */
+.navbar > .container {
+  flex-wrap: nowrap;
+  gap: .5rem;
+}
+
 .navbar-brand {
-  max-width: calc(100% - 70px);
+  min-width: 0;
 }
 
 /* Enlaces de navegación con área cómoda para pulsar. */
@@ -66,7 +93,9 @@ h3 {
 .btn-primary {
   --bs-btn-bg: var(--violeta);
   --bs-btn-border-color: var(--violeta);
-  --bs-btn-color: #fff;
+  --bs-btn-color: var(--texto-sobre-acento);
+  --bs-btn-hover-color: var(--texto-sobre-acento);
+  --bs-btn-active-color: var(--texto-sobre-acento);
   --bs-btn-hover-bg: var(--tinta);
   --bs-btn-hover-border-color: var(--tinta);
   --bs-btn-active-bg: var(--tinta);
@@ -91,7 +120,8 @@ h3 {
 
 /* Foco visible para todos los controles. */
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+.btn:focus-visible {
   outline: 3px solid var(--violeta);
   outline-offset: 4px;
   box-shadow: none;
@@ -104,7 +134,7 @@ button:focus-visible {
   left: 1rem;
   z-index: 1100;
   background: var(--tinta);
-  color: #fff;
+  color: var(--texto-sobre-acento);
   padding: .8rem;
 }
 
@@ -115,14 +145,14 @@ button:focus-visible {
 
 /* Panel claro para el logo, en el espacio visual del wireframe. */
 .brand-panel {
-  background: #fff;
-  border: 1px solid var(--tinta);
+  background: var(--superficie);
+  border: 1px solid var(--borde);
   border-radius: 16px;
 }
 
 /* Tarjetas coherentes con la guía. */
 .card {
-  border-color: var(--tinta);
+  border-color: var(--borde);
   border-radius: 16px;
   color: var(--tinta);
 }
@@ -141,7 +171,7 @@ button:focus-visible {
 .mobile-nav>summary {
   min-height: 44px;
   padding: .65rem .8rem;
-  border: 1px solid var(--tinta);
+  border: 1px solid var(--borde);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -153,7 +183,7 @@ button:focus-visible {
   top: calc(100% + 8px);
   width: 230px;
   background: var(--papel);
-  border: 1px solid var(--tinta);
+  border: 1px solid var(--borde);
   border-radius: 8px;
   padding: .5rem;
   z-index: 10;
@@ -173,6 +203,31 @@ summary:focus-visible {
   font-weight: 700;
 }
 
+/* Buscador de eventos con los mismos estados de foco que los formularios de Únete. */
+.event-filters {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+}
+
+.event-filters .form-label {
+  font-weight: 700;
+}
+
+.event-filters .form-control,
+.event-filters .form-select {
+  min-height: 44px;
+  border-color: var(--borde);
+}
+
+.event-filters input:focus-visible,
+.event-filters select:focus-visible {
+  outline: 3px solid var(--violeta);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+
 /* Botón secundario con altura de pulsación coherente. */
 .btn-outline-dark {
   min-height: 44px;
@@ -181,9 +236,47 @@ summary:focus-visible {
   font-weight: 700;
 }
 
+/* Variante de contraste del botón secundario sobre fondos oscuros. */
+[data-bs-theme="dark"] .btn-outline-dark {
+  --bs-btn-color: var(--tinta);
+  --bs-btn-border-color: var(--borde);
+  --bs-btn-hover-color: var(--papel);
+  --bs-btn-hover-bg: var(--tinta);
+  --bs-btn-hover-border-color: var(--tinta);
+  --bs-btn-active-color: var(--papel);
+  --bs-btn-active-bg: var(--tinta);
+  --bs-btn-active-border-color: var(--tinta);
+}
+
+/* El icono sustituye el texto visible y mantiene un área de pulsación de 44 px. */
+.theme-toggle {
+  --bs-btn-hover-bg: var(--rosa);
+  --bs-btn-active-bg: var(--rosa);
+  width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border-radius: 8px;
+  place-items: center;
+}
+
+.theme-toggle:not([hidden]) {
+  display: grid;
+}
+
+.theme-toggle[aria-pressed="true"] {
+  --bs-btn-bg: var(--rosa);
+}
+
+/* Las imágenes monocromas conservan el contraste sobre fondos oscuros. */
+[data-bs-theme="dark"] .navbar-brand img,
+[data-bs-theme="dark"] .brand-panel img,
+[data-bs-theme="dark"] .theme-toggle img {
+  filter: invert(1);
+}
+
 /* Únete: presentación y tarjetas del wireframe corregido. */
 .join-card {
-  border: 1px solid var(--tinta);
+  border: 1px solid var(--borde);
   scroll-margin-top: 1.5rem;
 }
 
@@ -200,7 +293,7 @@ summary:focus-visible {
 .join-details>summary {
   cursor: pointer;
   padding: .8rem;
-  border: 1px solid var(--tinta);
+  border: 1px solid var(--borde);
   border-radius: 8px;
   font-weight: 700;
 }
@@ -213,7 +306,7 @@ summary:focus-visible {
 .join-card .form-select {
   min-width: 0;
   width: 100%;
-  border-color: var(--tinta);
+  border-color: var(--borde);
   min-height: 44px;
 }
 
@@ -228,7 +321,7 @@ summary:focus-visible {
 .join-card .btn:disabled {
   opacity: 1;
   background: var(--tinta);
-  border-color: var(--tinta);
+  border-color: var(--borde);
   color: var(--papel);
 }
 
@@ -236,7 +329,7 @@ summary:focus-visible {
 .site-footer {
   background: var(--papel);
   color: var(--tinta);
-  border-top: 1px solid var(--tinta);
+  border-top: 1px solid var(--borde);
 }
 
 .footer-bar {
@@ -271,7 +364,7 @@ summary:focus-visible {
 }
 
 .footer-contact {
-  border-left: 1px solid var(--tinta);
+  border-left: 1px solid var(--borde);
   margin-left: .35rem;
   padding-left: .35rem;
 }

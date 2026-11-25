@@ -325,6 +325,29 @@ summary:focus-visible {
   color: var(--papel);
 }
 
+.join-form .is-invalid {
+  border-color: var(--bs-danger-text-emphasis, var(--tinta));
+}
+
+.join-form .invalid-feedback {
+  color: var(--bs-danger-text-emphasis, var(--tinta));
+  font-weight: 700;
+}
+
+.join-status:not(:empty) {
+  margin-top: .75rem;
+}
+
+.join-review {
+  background: var(--papel);
+}
+
+.join-review dd {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+
 /* Footer compacto común, según el wireframe: iconos y copyright centrado. */
 .site-footer {
   background: var(--papel);

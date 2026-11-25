@@ -1,32 +1,51 @@
 # Práctica DIW: Web de Comunidad Tecnológica con Bootstrap y Scrum
 
-Este repositorio contiene el proyecto de diseño y maquetación web para una comunidad tecnológica local sin ánimo de lucro. El desarrollo se ha realizado en equipo aplicando la metodología Scrum a lo largo de dos sprints.
+Este repositorio contiene el proyecto de diseño y maquetación web para una comunidad tecnológica local sin ánimo de lucro. 
 
-## 👥 Integrantes
-* [Nombre 1] ([@LucasMouris](https://github.com/Yate9))
-* [Nombre 2] ([@IkerRodriguez](https://github.com/ikerrguez))
-* [Nombre 3] ([@JoseLuisRey](https://github.com/Jose0711254))
-
+## 🎯 Objetivo de la Web
+Crear una plataforma web accesible, atractiva y mobile-first dirigida a estudiantes de FP, universitarios, perfiles junior y curiosos de la tecnología (16 a 35 años). Su finalidad principal es dar a conocer la comunidad, facilitar la inscripción a sus eventos mensuales (charlas, talleres y hackatones), captar nuevos socios y animar a los miembros a proponer sus propias charlas.
 
 ---
 
-## 🛠️ Estado del Proyecto y Componentes Implementados
+## 👥 Integrantes y Roles Scrum
+El desarrollo se ha realizado en equipo de tres aplicando la metodología ágil *Scrum* a lo largo de dos sprints:
 
-La web está prácticamente terminada, es completamente responsive (probada en 360px, 768px y 1280px) y cumple con los criterios de accesibilidad AA y validación W3C. 
-
-Se compone de 3 páginas principales (**Inicio**, **Eventos** y **Únete**) maquetadas con **Bootstrap 5.3** y estructuradas con HTML semántico:
-
-*   **Estructura Base:** Navbar global (desplegable en móvil con indicador de página activa) y Footer informativo de dos columnas.
-*   **Sección Eventos:** Grid de tarjetas (`Cards`) para los ponentes y talleres, junto con un `Carousel` / `Acordeón` para destacar las actividades.
-*   **Sección Únete:** Formulario interactivo con validación nativa de Bootstrap (mínimo 4 campos con sus `labels`) para el registro de socios y propuestas de charlas.
-*   **Tablas e Iconos:** Implementación de tablas estilizadas (`table-striped`, `table-hover`) para los calendarios de cuotas y uso de **Bootstrap Icons**.
-*   **Ventanas Modales:** Integración de componentes `Modal` funcionales y accesibles mediante teclado.
-*   **Estilos personalizados:** El archivo CSS propio se ha limitado estrictamente a los detalles no cubiertos por Bootstrap y se encuentra totalmente comentado.
+* *[Lucas Mouris Abeijón]* (https://github.com/Yate9) — *Coordinador de Reviews* y Developer
+* *[Iker Rodríguez Gracía]* (https://github.com/ikerrguez) — *Scrum Master (Sprint 2)* y Developer
+* *[José Luis Rey González]* (https://github.com/Jose0711254) — *Scrum Master (Sprints 1 y 2)* y Developer
 
 ---
 
-## 📅 Organización y Metodología
+## 📋 Gestión Ágil y Tablero
+* *Organización:* Seguimiento de historias de usuario y control de horas mediante las columnas Por hacer, En curso y Hecho, acompañadas de las fichas oficiales de planificación, seguimiento y retrospectiva en docs/.
+* *Diseño Previo:* Basado en wireframes (móvil y escritorio), moodboard y guía de estilos (paleta de colores, tipografías, componentes e iconografía) aprobados por el cliente en la Review del Sprint 1.
+* *Control de Versiones:* Historial colaborativo con commits descriptivos de todos los integrantes del equipo sobre la rama main.
 
-*   **Diseño Previo:** El desarrollo se basó en los wireframes, moodboard y la guía de estilos (colores y tipografías) aprobados por el cliente en el Sprint 1.
-*   **Gestión Ágil:** Hemos utilizado un tablero de **GitHub Projects** (*Por hacer*, *En curso*, *Hecho*) para el seguimiento de las historias de usuario y el control de horas de trabajo.
-*   **Control de Versiones:** El historial de Git refleja la colaboración equitativa del equipo con commits descriptivos de todos los miembros directamente en la rama `main`.
+---
+
+## 🛠️ Tecnologías Utilizadas
+* *HTML:* Estructura semántica (header, nav, main, section, footer) validada según estándares W3C.
+* *CSS:* Hoja de estilos propia (estilos.css) comentada y limitada exclusivamente a personalizaciones fuera del alcance del framework.
+* *Bootstrap 5.3:* Sistema de rejilla responsive y componentes interactivos cargados vía CDN oficial.
+* *Git y GitHub / GitHub Projects:* Control de versiones y gestión del Product/Sprint Backlog.
+
+---
+
+## 📁 Estructura de Carpetas
+```text
+nodo-norte/
+├── index.html
+├── eventos.html
+├── unete.html
+├── sobre-nosotros.html 
+├── css/
+│   └── estilos.css
+├── js/
+│   └── validacion.js
+├── img/
+├── docs/
+│   ├── fichas-practica.pdf
+│   ├── guia-estilos.pdf
+│   ├── moodboard.pdf
+│   └── wireframes/
+└── README.md

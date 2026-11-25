@@ -11,7 +11,7 @@ Crear una plataforma web accesible, atractiva y mobile-first dirigida a estudian
 El desarrollo se ha realizado en equipo de tres aplicando la metodología ágil *Scrum* a lo largo de dos sprints:
 
 * *[Lucas Mouris Abeijón]* (https://github.com/Yate9) — *Coordinador de Reviews* y Developer
-* *[Iker Rodríguez Gracía]* (https://github.com/ikerrguez) — *Scrum Master (Sprint 2)* y Developer
+* *[Iker Rodríguez García]* (https://github.com/ikerrguez) — *Scrum Master (Sprint 2)* y Developer
 * *[José Luis Rey González]* (https://github.com/Jose0711254) — *Scrum Master (Sprints 1 y 2)* y Developer
 
 ---

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,80 +8,111 @@
   <title>Inicio | Nodo Norte</title>
   <!-- Carga el script y los estilos de la web. -->
   <script src="js/validacion.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap Icons (Requerido por la profesora) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
   <!-- Permite saltar al contenido con el teclado. -->
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<!-- Cabecera con el logotipo y la navegación. -->
-<header><nav class="navbar" aria-label="Navegación principal"><div class="container py-2">
-<a class="navbar-brand" href="index.html"><img src="img/logo-nodo-norte.png" width="240" height="80" alt="Nodo Norte, inicio"></a>
-<div class="d-flex align-items-center gap-2 flex-shrink-0">
-<!-- Enlaces del menú de escritorio. -->
-<ul class="navbar-nav flex-row gap-3 d-none d-lg-flex"><li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-<li class="nav-item"><a class="nav-link" href="unete.html">Únete</a></li>
-<li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li></ul>
-<!-- Botón para cambiar el tema. -->
-<button class="btn theme-toggle" type="button" id="theme-toggle" aria-label="Modo oscuro" aria-pressed="false" title="Modo oscuro" hidden>
-  <img src="img/icono-modo-oscuro.png" width="32" height="32" alt="">
-</button>
-<!-- Menú desplegable para móviles. -->
-<details class="mobile-nav d-lg-none"><summary>Menú</summary><ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-<li class="nav-item"><a class="nav-link" href="unete.html">Únete</a></li>
-<li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li></ul></details>
-</div>
-</div></nav></header>
-<!-- Contenido principal de la página. -->
-<main id="contenido" class="flex-grow-1" tabindex="-1">
-<!-- Presentación de Nodo Norte y acceso a las otras páginas. -->
-<section class="container py-5"><div class="row align-items-center g-4 g-lg-5"><div class="col-12 col-lg-6"><p class="eyebrow">TECNOLOGÍA · COMUNIDAD · APRENDIZAJE</p><h1>Ven con dudas.<br>Sal con ganas.</h1><p class="lead my-4">Charlas, talleres y personas con las que aprender. No necesitas saberlo todo: solo tener curiosidad.</p><div class="d-flex flex-wrap gap-3"><a class="btn btn-primary" href="eventos.html">Encuentra tu próximo plan</a><a class="btn btn-outline-dark" href="sobre-nosotros.html">Así somos</a></div></div><div class="col-12 col-lg-6"><div class="brand-panel p-4 p-md-5"><img src="img/logo-nodo-norte.png" class="img-fluid" width="1200" height="400" alt="Nodo Norte: una red de personas con una aguja que apunta al norte."></div></div></div></section>
-<!-- Bienvenida a quienes empiezan. -->
-<section class="container pb-5"><div class="welcome-panel p-4 p-md-5"><h2>Tu primera vez también es tu sitio.</h2><p class="mb-0">Empieza con las charlas de nivel 1, pregunta sin miedo y quédate a conocer a otras personas.</p></div></section></main>
-<!-- Pie de página compartido. -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-bar">
-      <a class="footer-brand" href="index.html">
-        <img src="img/logo-nodo-norte.png" width="156" height="52" alt="Nodo Norte, inicio">
-      </a>
-      <!-- Redes sociales y correo de contacto. -->
-      <nav class="footer-links" aria-label="Redes sociales y contacto">
-        <ul class="footer-social">
-          <li>
-            <a class="footer-link" href="https://x.com/">
-              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true" focusable="false">
-                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932 6.064-6.933Zm-1.29 19.49h2.039L6.488 3.24H4.3l13.31 17.403Z"/>
-              </svg>
-              <span>X</span>
-            </a>
-          </li>
-          <li>
-            <a class="footer-link" href="https://www.instagram.com/">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
-                <rect x="3" y="3" width="18" height="18" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-              </svg>
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a class="footer-link" href="mailto:nodonorter@gmail.com">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
-                <path d="m3.5 6 8.5 7 8.5-7"/>
-              </svg>
-              <span>nodonorter@gmail.com</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <!-- Cabecera con el logotipo y la navegación. -->
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="container py-2">
+        <a class="navbar-brand" href="index.html"><img src="img/logo-nodo-norte.png" width="240" height="80"
+            alt="Nodo Norte, inicio"></a>
+        <div class="d-flex align-items-center gap-2 flex-shrink-0">
+          <!-- Enlaces del menú de escritorio. -->
+          <ul class="navbar-nav flex-row gap-3 d-none d-lg-flex">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" href="unete.html">Únete</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+          </ul>
+          <!-- Botón para cambiar el tema. -->
+          <button class="btn theme-toggle" type="button" id="theme-toggle" aria-label="Modo oscuro" aria-pressed="false"
+            title="Modo oscuro" hidden>
+            <img src="img/icono-modo-oscuro.png" width="32" height="32" alt="">
+          </button>
+          <!-- Menú desplegable para móviles. -->
+          <details class="mobile-nav d-lg-none">
+            <summary>Menú</summary>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+              <li class="nav-item"><a class="nav-link" href="unete.html">Únete</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Contenido principal de la página. -->
+  <main id="contenido" class="flex-grow-1" tabindex="-1">
+    <!-- Presentación de Nodo Norte y acceso a las otras páginas. -->
+    <section class="container py-5">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-12 col-lg-6">
+          <p class="eyebrow"><i class="bi bi-terminal-fill me-1"></i> TECNOLOGÍA · COMUNIDAD · APRENDIZAJE</p>
+          <h1>Ven con dudas.<br>Sal con ganas.</h1>
+          <p class="lead my-4">Charlas, talleres y personas con las que aprender. No necesitas saberlo todo: solo tener
+            curiosidad.</p>
+          <div class="d-flex flex-wrap gap-3"><a class="btn btn-primary" href="eventos.html"><i
+                class="bi bi-calendar-event me-2"></i>Encuentra tu próximo plan</a><a class="btn btn-outline-dark"
+              href="sobre-nosotros.html"><i class="bi bi-people me-2"></i>Así somos</a></div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="brand-panel p-4 p-md-5"><img src="img/logo-nodo-norte.png" class="img-fluid" width="1200"
+              height="400" alt="Nodo Norte: una red de personas con una aguja que apunta al norte."></div>
+        </div>
+      </div>
+    </section>
+    <!-- Bienvenida a quienes empiezan. -->
+    <section class="container pb-5">
+      <div class="welcome-panel p-4 p-md-5">
+        <h2><i class="bi bi-heart-fill me-2"></i>Tu primera vez también es tu sitio.</h2>
+        <p class="mb-0">Empieza con las charlas de nivel 1, pregunta sin miedo y quédate a conocer a otras personas.</p>
+      </div>
+    </section>
+  </main>
+  <!-- Pie de página compartido. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bar">
+        <a class="footer-brand" href="index.html">
+          <img src="img/logo-nodo-norte.png" width="156" height="52" alt="Nodo Norte, inicio">
+        </a>
+        <!-- Redes sociales y correo de contacto. -->
+        <nav class="footer-links" aria-label="Redes sociales y contacto">
+          <ul class="footer-social">
+            <li>
+              <a class="footer-link" href="https://x.com/">
+                <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                <span>X</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://www.instagram.com/">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="mailto:nodonorter@gmail.com">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <span>nodonorter@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copyright">© 2026 Nodo Norte</p>
     </div>
-    <p class="footer-copyright">© 2026 Nodo Norte</p>
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>

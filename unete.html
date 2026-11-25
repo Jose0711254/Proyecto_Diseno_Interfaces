@@ -6,14 +6,12 @@
   <meta name="description" content="Nodo Norte: comunidad, aprendizaje compartido y software libre.">
   <title>Únete | Nodo Norte</title>
   <script src="js/tema.js"></script>
-  <!-- Bootstrap por CDN y estilos propios de la comunidad. -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/unete.js" defer></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <!-- Acceso directo al contenido para navegación con teclado. -->
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<!-- Menú nativo sin JavaScript: details/summary en móvil. -->
 <header><nav class="navbar" aria-label="Navegación principal"><div class="container py-2">
 <a class="navbar-brand" href="index.html"><img src="img/logo-nodo-norte.png" width="240" height="80" alt="Nodo Norte, inicio"></a>
 <div class="d-flex align-items-center gap-2 flex-shrink-0">
@@ -29,14 +27,178 @@
 <li class="nav-item"><a class="nav-link active" aria-current="page" href="unete.html">Únete</a></li>
 <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li></ul></details>
 </div>
-</div></nav></header><main id="contenido" class="flex-grow-1" tabindex="-1"><section class="container py-5" aria-labelledby="titulo-unete"><div class="row g-4 g-lg-5 align-items-start"><div class="col-12 col-lg-5"><p class="eyebrow">TU PUNTO DE ENCUENTRO</p><h1 id="titulo-unete">Aquí tienes sitio.</h1><p class="lead mt-3">Forma parte de la comunidad. Ven con curiosidad y comparte lo que sabes, tengas el nivel que tengas.</p><nav class="d-flex flex-wrap gap-2 my-4" aria-label="Formas de participar"><a class="btn btn-outline-dark" href="eventos.html">Eventos</a><a class="btn btn-outline-dark" href="#socios">Socios</a><a class="btn btn-outline-dark" href="#charlas">Charlas</a></nav><div class="join-event-note"><h2 class="h5">Apúntate a un encuentro</h2><p>Encuentra tu próxima charla o taller. La inscripción se realiza desde la ficha de cada evento.</p><a href="eventos.html">Ver los eventos →</a></div></div><div class="col-12 col-lg-7"><div class="row g-4"><div class="col-12 col-md-6"><article id="socios" class="welcome-panel join-card p-4"><p class="eyebrow">01 / COMUNIDAD</p><h2>Hazte socio</h2><p>Ayuda a que este punto de encuentro siga creciendo. Plazas reservadas en talleres hasta la fecha indicada y aviso por newsletter. Aportación voluntaria de <strong>10 € al año</strong>.</p><details class="join-details"><summary>Ver formulario</summary><form class="mt-4" aria-label="Hazte socio" aria-describedby="aviso-socios"><p id="aviso-socios" class="small">Vista previa del formulario. El envío todavía no está disponible.</p><div class="mb-3"><label class="form-label" for="s-nombre">Nombre</label><input class="form-control" id="s-nombre" type="text" autocomplete="given-name" required></div><div class="mb-3"><label class="form-label" for="s-apellidos">Apellidos</label><input class="form-control" id="s-apellidos" type="text" autocomplete="family-name" required></div><div class="mb-3"><label class="form-label" for="s-correo">Correo electrónico</label><input class="form-control" id="s-correo" type="email" autocomplete="email" required></div><div class="mb-3"><label class="form-label" for="s-edad">Edad</label><input class="form-control" id="s-edad" type="number" min="0" max="120" required></div><div class="mb-3"><label class="form-label" for="s-fecha">Fecha de nacimiento</label><input class="form-control" id="s-fecha" type="date" autocomplete="bday" required></div><div class="mb-3"><label class="form-label" for="s-aportacion">Aportación voluntaria</label><select class="form-select" id="s-aportacion"><option>Sin aportación</option><option>10 €/año · Transferencia</option><option>10 €/año · PayPal</option></select></div><button type="button" class="btn btn-primary w-100" disabled>Disponible próximamente</button></form></details></article></div><div class="col-12 col-md-6"><article id="charlas" class="community-note join-card p-4"><p class="eyebrow">02 / COMPARTE</p><h2>Propón una charla</h2><p>Lo que tú sabes puede ser el próximo descubrimiento de otra persona. Comparte tu idea en una charla o taller: cuéntanos el tema y cuánto tiempo necesitas.</p><details class="join-details"><summary>Ver formulario</summary><form class="mt-4" aria-label="Propón una charla" aria-describedby="aviso-charlas"><p id="aviso-charlas" class="small">Vista previa del formulario. El envío todavía no está disponible.</p><div class="mb-3"><label class="form-label" for="c-nombre">Nombre</label><input class="form-control" id="c-nombre" type="text" autocomplete="name" required></div><div class="mb-3"><label class="form-label" for="c-correo">Correo electrónico</label><input class="form-control" id="c-correo" type="email" autocomplete="email" required></div><div class="mb-3"><label class="form-label" for="c-tema">Tema propuesto</label><input class="form-control" id="c-tema" type="text"  required></div><div class="mb-3"><label class="form-label" for="c-tipo">Tipo de actividad</label><select class="form-select" id="c-tipo"><option>Charla</option><option>Taller</option></select></div><div class="mb-3"><label class="form-label" for="c-duracion">Duración estimada (minutos)</label><input class="form-control" id="c-duracion" type="number" min="1" required></div><div class="mb-3"><label class="form-label" for="c-descripcion">Breve descripción</label><textarea class="form-control" id="c-descripcion" rows="4" required></textarea></div><button type="button" class="btn btn-primary w-100" disabled>Disponible próximamente</button></form></details></article></div></div></div></div></section></main><!-- Pie compartido con información de la comunidad. -->
-<footer class="site-footer"><div class="container footer-bar">
-  <!-- Sustituir estos iconos por enlaces cuando se confirmen los perfiles y el correo. -->
-  <ul class="footer-social" aria-label="Redes sociales y contacto">
-    <li><span class="footer-icon" role="img" aria-label="Bluesky: pendiente de confirmar" title="Bluesky: pendiente de confirmar"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 11C8 4 2 2 3 8c0 3 3 5 6 5-6-1-6 6-2 7 2 0 4-3 5-5 1 2 3 5 5 5 4-1 4-8-2-7 3 0 6-2 6-5 1-6-5-4-9 3Z"/></svg></span></li>
-    <li><span class="footer-icon" role="img" aria-label="Instagram: pendiente de confirmar" title="Instagram: pendiente de confirmar"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></span></li>
-    <li><span class="footer-icon" role="img" aria-label="Mastodon: pendiente de confirmar" title="Mastodon: pendiente de confirmar"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14c0 3-5 4-10 3l1 3c-5 1-7-2-7-7V7c0-5 16-5 16 0Z"/><path d="M8 13V8c0-3 4-3 4 0v4-4c0-3 4-3 4 0v5"/></svg></span></li>
-    <li class="footer-contact"><span class="footer-icon" role="img" aria-label="Correo electrónico: pendiente de confirmar" title="Correo electrónico: pendiente de confirmar"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span></li>
-  </ul>
-  <p class="footer-copyright">© 2026 Nodo Norte</p>
-</div></footer></body></html>
+</div></nav></header>
+<main id="contenido" class="flex-grow-1" tabindex="-1">
+  <section class="container py-5" aria-labelledby="titulo-unete">
+    <div class="row g-4 g-lg-5 align-items-start">
+      <div class="col-12 col-lg-5">
+        <p class="eyebrow">TU PUNTO DE ENCUENTRO</p>
+        <h1 id="titulo-unete">Aquí tienes sitio.</h1>
+        <p class="lead mt-3">Forma parte de la comunidad. Ven con curiosidad y comparte lo que sabes, tengas el nivel que tengas.</p>
+        <nav class="d-flex flex-wrap gap-2 my-4" aria-label="Formas de participar">
+          <a class="btn btn-outline-dark" href="eventos.html">Eventos</a>
+          <a class="btn btn-outline-dark" href="#socios">Socios</a>
+          <a class="btn btn-outline-dark" href="#charlas">Charlas</a>
+        </nav>
+        <div class="join-event-note">
+          <h2 class="h5">Apúntate a un encuentro</h2>
+          <p>Encuentra tu próxima charla o taller. La inscripción se realiza desde la ficha de cada evento.</p>
+          <a href="eventos.html">Ver los eventos →</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-7">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+            <article id="socios" class="welcome-panel join-card p-4">
+              <p class="eyebrow">01 / COMUNIDAD</p>
+              <h2 id="titulo-socios">Hazte socio</h2>
+              <p>Ayuda a que este punto de encuentro siga creciendo. Plazas reservadas en talleres hasta la fecha indicada y aviso por newsletter. Aportación voluntaria de <strong>10 € al año</strong>.</p>
+              <details class="join-details">
+                <summary>Ver formulario</summary>
+                <form class="join-form mt-4" method="post" aria-labelledby="titulo-socios" aria-describedby="aviso-socios">
+                  <p id="aviso-socios" class="small">Los campos son obligatorios salvo la aportación. Puedes revisar la solicitud aquí. El envío aún no está disponible.</p>
+                  <div class="mb-3">
+                    <label class="form-label" for="s-nombre">Nombre</label>
+                    <input class="form-control" id="s-nombre" name="nombre" type="text" autocomplete="given-name" required>
+                    <p class="invalid-feedback" id="s-nombre-error">Escribe tu nombre.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="s-apellidos">Apellidos</label>
+                    <input class="form-control" id="s-apellidos" name="apellidos" type="text" autocomplete="family-name" required>
+                    <p class="invalid-feedback" id="s-apellidos-error">Escribe tus apellidos.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="s-correo">Correo electrónico</label>
+                    <input class="form-control" id="s-correo" name="correo" type="email" autocomplete="email" required>
+                    <p class="invalid-feedback" id="s-correo-error">Introduce una dirección de correo válida.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="s-fecha">Fecha de nacimiento</label>
+                    <input class="form-control" id="s-fecha" name="fecha_nacimiento" type="date" autocomplete="bday" required>
+                    <p class="invalid-feedback" id="s-fecha-error">Indica una fecha de nacimiento que corresponda a una edad de 0 a 120 años.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="s-edad">Edad (calculada)</label>
+                    <input class="form-control" id="s-edad" name="edad" type="number" readonly>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="s-aportacion">Aportación voluntaria</label>
+                    <select class="form-select" id="s-aportacion" name="aportacion">
+                      <option value="sin-aportacion">Sin aportación</option>
+                      <option value="transferencia">10 €/año · Transferencia</option>
+                      <option value="paypal">10 €/año · PayPal</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100" disabled>Revisar solicitud</button>
+                  <p class="join-status mb-0" role="status"></p>
+                  <div class="join-review mt-3 p-3 rounded" hidden>
+                    <h3 class="h6">Resumen de la solicitud</h3>
+                    <dl class="mb-0"></dl>
+                  </div>
+                </form>
+              </details>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+            <article id="charlas" class="community-note join-card p-4">
+              <p class="eyebrow">02 / COMPARTE</p>
+              <h2 id="titulo-charlas">Propón una charla</h2>
+              <p>Lo que tú sabes puede ser el próximo descubrimiento de otra persona. Comparte tu idea en una charla o taller: cuéntanos el tema y cuánto tiempo necesitas.</p>
+              <details class="join-details">
+                <summary>Ver formulario</summary>
+                <form class="join-form mt-4" method="post" aria-labelledby="titulo-charlas" aria-describedby="aviso-charlas">
+                  <p id="aviso-charlas" class="small">Todos los campos son obligatorios. Puedes revisar la propuesta aquí. El envío aún no está disponible.</p>
+                  <div class="mb-3">
+                    <label class="form-label" for="c-nombre">Nombre</label>
+                    <input class="form-control" id="c-nombre" name="nombre" type="text" autocomplete="name" required>
+                    <p class="invalid-feedback" id="c-nombre-error">Escribe tu nombre.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="c-correo">Correo electrónico</label>
+                    <input class="form-control" id="c-correo" name="correo" type="email" autocomplete="email" required>
+                    <p class="invalid-feedback" id="c-correo-error">Introduce una dirección de correo válida.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="c-tema">Tema propuesto</label>
+                    <input class="form-control" id="c-tema" name="tema" type="text" required>
+                    <p class="invalid-feedback" id="c-tema-error">Escribe el tema que quieres presentar.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="c-tipo">Tipo de actividad</label>
+                    <select class="form-select" id="c-tipo" name="tipo" required>
+                      <option value="" selected disabled>Elige una opción</option>
+                      <option value="charla">Charla</option>
+                      <option value="taller">Taller</option>
+                    </select>
+                    <p class="invalid-feedback" id="c-tipo-error">Elige charla o taller.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="c-duracion">Duración estimada (minutos)</label>
+                    <input class="form-control" id="c-duracion" name="duracion" type="number" min="1" step="1" required>
+                    <p class="invalid-feedback" id="c-duracion-error">Introduce una duración de al menos un minuto entero.</p>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="c-descripcion">Breve descripción</label>
+                    <textarea class="form-control" id="c-descripcion" name="descripcion" rows="4" required></textarea>
+                    <p class="invalid-feedback" id="c-descripcion-error">Escribe una breve descripción de la actividad.</p>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100" disabled>Revisar propuesta</button>
+                  <p class="join-status mb-0" role="status"></p>
+                  <div class="join-review mt-3 p-3 rounded" hidden>
+                    <h3 class="h6">Resumen de la propuesta</h3>
+                    <dl class="mb-0"></dl>
+                  </div>
+                </form>
+              </details>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bar">
+      <a class="footer-brand" href="index.html">
+        <img src="img/logo-nodo-norte.png" width="156" height="52" alt="Nodo Norte, inicio">
+      </a>
+      <nav class="footer-links" aria-label="Redes sociales y contacto">
+        <ul class="footer-social">
+          <li>
+            <a class="footer-link" href="https://x.com/">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932 6.064-6.933Zm-1.29 19.49h2.039L6.488 3.24H4.3l13.31 17.403Z"/>
+              </svg>
+              <span>X</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.instagram.com/">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="mailto:nodonorter@gmail.com">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
+                <path d="m3.5 6 8.5 7 8.5-7"/>
+              </svg>
+              <span>nodonorter@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-copyright">© 2026 Nodo Norte</p>
+  </div>
+</footer>
+</body>
+</html>

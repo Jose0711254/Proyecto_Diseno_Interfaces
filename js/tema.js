@@ -11,7 +11,6 @@
     }
   }
 
-  // Aplica la preferencia antes de cargar los estilos para evitar un cambio visible de tema.
   root.dataset.bsTheme = readTheme() ?? 'light';
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -31,7 +30,6 @@
       try {
         localStorage.setItem(storageKey, theme);
       } catch {
-        // El botón sigue funcionando en esta página si el navegador bloquea el almacenamiento.
       }
     });
 

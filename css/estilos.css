@@ -1,4 +1,4 @@
-/* Paleta de la guía de estilos. */
+/* Colores del tema claro. */
 :root {
   --papel: #FFF9ED;
   --tinta: #24152F;
@@ -10,6 +10,7 @@
   --texto-sobre-acento: #fff;
 }
 
+/* Colores del modo oscuro. */
 :root[data-bs-theme="dark"] {
   color-scheme: dark;
   --papel: #201826;
@@ -29,7 +30,7 @@
   --bs-border-color: var(--borde);
 }
 
-/* Tipografía y fondo comunes. Bootstrap se encarga de la rejilla. */
+/* Letra, fondo y color del texto. */
 body {
   font-family: Arial, sans-serif;
   color: var(--tinta);
@@ -37,26 +38,26 @@ body {
   line-height: 1.5;
 }
 
-/* Jerarquía tipográfica adaptable a pantallas pequeñas. */
+/* Tamaño adaptable del título principal. */
 h1 {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
 }
 
-/* Encabezados coherentes con Arial Bold. */
+/* Negrita en los subtítulos. */
 h2,
 h3 {
   font-weight: 700;
 }
 
-/* Detalle de terminal de la identidad. */
+/* Rótulos pequeños en violeta. */
 .eyebrow {
   font-family: Consolas, monospace;
   color: var(--violeta);
   font-size: .875rem;
 }
 
-/* Logotipo proporcionado sin deformación. */
+/* Tamaño del logotipo sin deformarlo. */
 .navbar-brand img {
   display: block;
   width: 220px;
@@ -64,8 +65,8 @@ h3 {
   height: auto;
 }
 
-/* Mantiene el logotipo, el selector de tema y el menú en la misma fila. */
-.navbar > .container {
+/* Cabecera y menú en una fila. */
+.navbar>.container {
   flex-wrap: nowrap;
   gap: .5rem;
 }
@@ -74,14 +75,14 @@ h3 {
   min-width: 0;
 }
 
-/* Enlaces de navegación con área cómoda para pulsar. */
+/* Espacio para pulsar los enlaces. */
 .navbar .nav-link {
   color: var(--tinta);
   min-height: 44px;
   padding: .75rem;
 }
 
-/* La página actual se distingue también por el subrayado. */
+/* Destaca la página actual. */
 .navbar .nav-link.active {
   color: var(--violeta);
   font-weight: 700;
@@ -89,7 +90,7 @@ h3 {
   text-underline-offset: .3em;
 }
 
-/* Acción principal y sus estados según la guía. */
+/* Estilo y estados del botón principal. */
 .btn-primary {
   --bs-btn-bg: var(--violeta);
   --bs-btn-border-color: var(--violeta);
@@ -106,19 +107,19 @@ h3 {
   font-weight: 700;
 }
 
-/* Superficie de bienvenida con acento lima. */
+/* Recuadros verdes de bienvenida. */
 .welcome-panel {
   background: var(--lima);
   border-radius: 16px;
 }
 
-/* Bloque de apoyo con rosa y texto tinta. */
+/* Recuadros rosas de información. */
 .community-note {
   background: var(--rosa);
   border-radius: 16px;
 }
 
-/* Foco visible para todos los controles. */
+/* Marca el foco en enlaces y botones. */
 a:focus-visible,
 button:focus-visible,
 .btn:focus-visible {
@@ -127,7 +128,7 @@ button:focus-visible,
   box-shadow: none;
 }
 
-/* Atajo visible solo cuando recibe el foco. */
+/* Atajo al contenido visible con el teclado. */
 .skip-link {
   position: absolute;
   top: -100px;
@@ -138,36 +139,72 @@ button:focus-visible,
   padding: .8rem;
 }
 
-/* Permite saltar la navegación con teclado. */
 .skip-link:focus {
   top: 1rem;
 }
 
-/* Panel claro para el logo, en el espacio visual del wireframe. */
+/* Recuadro del logotipo. */
 .brand-panel {
   background: var(--superficie);
   border: 1px solid var(--borde);
   border-radius: 16px;
 }
 
-/* Tarjetas coherentes con la guía. */
+/* Bordes y texto de las tarjetas. */
 .card {
   border-color: var(--borde);
   border-radius: 16px;
   color: var(--tinta);
 }
 
-/* Acento de los valores de la comunidad. */
+/* Fondo de las tarjetas de valores. */
 .value-card {
   background: var(--rosa);
 }
 
-/* Desplegable móvil nativo. El navegador gestiona teclado y estado. */
+/* Limita el ancho de la presentación. */
+.team-intro {
+  max-width: 42rem;
+}
+
+/* Ancho, fondo y recorte de las fichas. */
+.team-card {
+  max-width: 26rem;
+  margin-inline: auto;
+  overflow: hidden;
+  background: var(--superficie);
+}
+
+/* Iguala el tamaño de los retratos. */
+.team-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+/* Ajusta el encuadre de la foto de Lucas. */
+.team-portrait-lucas {
+  object-position: center 22%;
+}
+
+/* Separa la foto del texto de la ficha. */
+.team-card .card-body {
+  border-top: 1px solid var(--borde);
+}
+
+/* Destaca el puesto de cada persona. */
+.team-role {
+  color: var(--violeta);
+}
+
+/* Menú desplegable para móviles. */
 .mobile-nav {
   position: relative;
 }
 
-/* Botón del menú con área de pulsación suficiente. */
+/* Tamaño del botón del menú. */
 .mobile-nav>summary {
   min-height: 44px;
   padding: .65rem .8rem;
@@ -176,7 +213,7 @@ button:focus-visible,
   cursor: pointer;
 }
 
-/* Enlaces del menú sobre un panel opaco, alineado al borde derecho. */
+/* Coloca los enlaces bajo el botón. */
 .mobile-nav>ul {
   position: absolute;
   right: 0;
@@ -189,13 +226,13 @@ button:focus-visible,
   z-index: 10;
 }
 
-/* Foco visible también en los controles nativos sin scripts. */
+/* Marca el foco en los desplegables. */
 summary:focus-visible {
   outline: 3px solid var(--violeta);
   outline-offset: 4px;
 }
 
-/* Detalles de evento accesibles con teclado y ratón. */
+/* Estilo del botón de detalles del evento. */
 .event-details summary {
   cursor: pointer;
   color: var(--violeta);
@@ -203,23 +240,26 @@ summary:focus-visible {
   font-weight: 700;
 }
 
-/* Buscador de eventos con los mismos estados de foco que los formularios de Únete. */
+/* Recuadro de los filtros de eventos. */
 .event-filters {
   background: var(--superficie);
   border: 1px solid var(--borde);
   border-radius: 16px;
 }
 
+/* Destaca las etiquetas de los filtros. */
 .event-filters .form-label {
   font-weight: 700;
 }
 
+/* Tamaño de los campos de búsqueda. */
 .event-filters .form-control,
 .event-filters .form-select {
   min-height: 44px;
   border-color: var(--borde);
 }
 
+/* Marca el campo de búsqueda activo. */
 .event-filters input:focus-visible,
 .event-filters select:focus-visible {
   outline: 3px solid var(--violeta);
@@ -228,7 +268,7 @@ summary:focus-visible {
 }
 
 
-/* Botón secundario con altura de pulsación coherente. */
+/* Tamaño del botón secundario. */
 .btn-outline-dark {
   min-height: 44px;
   padding: .65rem 1rem;
@@ -236,7 +276,7 @@ summary:focus-visible {
   font-weight: 700;
 }
 
-/* Variante de contraste del botón secundario sobre fondos oscuros. */
+/* Contraste del botón en modo oscuro. */
 [data-bs-theme="dark"] .btn-outline-dark {
   --bs-btn-color: var(--tinta);
   --bs-btn-border-color: var(--borde);
@@ -248,7 +288,7 @@ summary:focus-visible {
   --bs-btn-active-border-color: var(--tinta);
 }
 
-/* El icono sustituye el texto visible y mantiene un área de pulsación de 44 px. */
+/* Icono y estados del selector de tema. */
 .theme-toggle {
   --bs-btn-hover-bg: var(--rosa);
   --bs-btn-active-bg: var(--rosa);
@@ -267,19 +307,20 @@ summary:focus-visible {
   --bs-btn-bg: var(--rosa);
 }
 
-/* Las imágenes monocromas conservan el contraste sobre fondos oscuros. */
+/* Aclara el logotipo y el icono de luna. */
 [data-bs-theme="dark"] .navbar-brand img,
 [data-bs-theme="dark"] .brand-panel img,
 [data-bs-theme="dark"] .theme-toggle img {
   filter: invert(1);
 }
 
-/* Únete: presentación y tarjetas del wireframe corregido. */
+/* Borde y espacio al abrir una ficha. */
 .join-card {
   border: 1px solid var(--borde);
   scroll-margin-top: 1.5rem;
 }
 
+/* Destaca el acceso a Eventos. */
 .join-event-note {
   border-left: 3px solid var(--violeta);
   padding-left: 1rem;
@@ -290,6 +331,7 @@ summary:focus-visible {
   font-weight: 700;
 }
 
+/* Estilo del desplegable del formulario. */
 .join-details>summary {
   cursor: pointer;
   padding: .8rem;
@@ -302,6 +344,7 @@ summary:focus-visible {
   background: var(--papel);
 }
 
+/* Tamaño de los campos del formulario. */
 .join-card .form-control,
 .join-card .form-select {
   min-width: 0;
@@ -310,6 +353,7 @@ summary:focus-visible {
   min-height: 44px;
 }
 
+/* Marca el campo del formulario activo. */
 .join-card input:focus-visible,
 .join-card select:focus-visible,
 .join-card textarea:focus-visible {
@@ -318,6 +362,7 @@ summary:focus-visible {
   box-shadow: none;
 }
 
+/* Mantiene legible el botón desactivado. */
 .join-card .btn:disabled {
   opacity: 1;
   background: var(--tinta);
@@ -325,64 +370,134 @@ summary:focus-visible {
   color: var(--papel);
 }
 
-/* Footer compacto común, según el wireframe: iconos y copyright centrado. */
-.site-footer {
+/* Resalta los campos con errores. */
+.join-form .is-invalid {
+  border-color: var(--bs-danger-text-emphasis, var(--tinta));
+}
+
+.join-form .invalid-feedback {
+  color: var(--bs-danger-text-emphasis, var(--tinta));
+  font-weight: 700;
+}
+
+/* Añade espacio al mensaje del formulario. */
+.join-status:not(:empty) {
+  margin-top: .75rem;
+}
+
+/* Muestra el resumen en un recuadro. */
+.join-review {
   background: var(--papel);
+}
+
+/* Ajusta el texto largo del resumen. */
+.join-review dd {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+
+/* Fondo y borde del pie de página. */
+.site-footer {
+  background: var(--superficie);
   color: var(--tinta);
   border-top: 1px solid var(--borde);
 }
 
+/* Coloca el logotipo y los enlaces. */
 .footer-bar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 1rem;
-  padding-top: .8rem;
-  padding-bottom: .8rem;
-}
-
-.footer-social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  gap: .25rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 1rem 2rem;
+  padding-block: 1.5rem;
 }
 
-.footer-icon {
+/* Tamaño del logotipo enlazado. */
+.footer-brand {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
+  min-height: 44px;
+}
+
+.footer-brand img {
+  display: block;
+  width: 156px;
+  height: auto;
+}
+
+/* Aclara el logotipo del pie en modo oscuro. */
+[data-bs-theme="dark"] .footer-brand img {
+  filter: invert(1);
+}
+
+/* Ajusta los enlaces al espacio disponible. */
+.footer-links {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Ordena las redes y el correo en filas. */
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social li {
+  max-width: 100%;
+}
+
+/* Estilo y tamaño de los enlaces del pie. */
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  max-width: 100%;
+  min-height: 44px;
+  padding: .5rem .75rem;
+  background: var(--papel);
+  color: var(--tinta);
+  border: 1px solid var(--borde);
+  border-radius: .6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+/* Resalta el enlace señalado o enfocado. */
+.footer-link:hover,
+.footer-link:focus-visible {
+  background: var(--lima);
   color: var(--tinta);
 }
 
-.footer-icon svg {
+/* Evita que los iconos se encojan. */
+.footer-link svg {
   flex-shrink: 0;
 }
 
-.footer-contact {
-  border-left: 1px solid var(--borde);
-  margin-left: .35rem;
-  padding-left: .35rem;
+/* Permite partir un correo largo. */
+.footer-link span {
+  overflow-wrap: anywhere;
 }
 
+/* Separa el texto de derechos de autor. */
 .footer-copyright {
+  border-top: 1px solid var(--borde);
   margin: 0;
-  text-align: center;
-  white-space: nowrap;
+  padding-block: .8rem;
+  font-size: .875rem;
 }
 
+/* Apila el pie de página en móvil. */
 @media (max-width: 767.98px) {
   .footer-bar {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: .5rem;
-  }
-
-  .footer-copyright {
-    white-space: normal;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

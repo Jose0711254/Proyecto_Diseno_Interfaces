@@ -251,4 +251,37 @@
     initEventFilters();
     initJoinForms();
   });
+
+  /* --- Control del Carrusel de Eventos --- */
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = [
+      { titulo: "Charlas mensuales", desc: "Espacios abiertos de aprendizaje compartido y software libre cada primer martes de mes." },
+      { titulo: "Talleres prácticos", desc: "Aprende haciendo codo a codo con perfiles junior y profesionales de la zona." },
+      { titulo: "Hackatones locales", desc: "Retos de programación colaborativa en equipo durante un fin de semana." }
+    ];
+
+    let indexActual = 0;
+
+    const tituloEl = document.getElementById('tituloSlide');
+    const descEl = document.getElementById('descSlide');
+    const btnAnterior = document.getElementById('btnAnterior');
+    const btnSiguiente = document.getElementById('btnSiguiente');
+
+    if (tituloEl && descEl && btnAnterior && btnSiguiente) {
+      function actualizarSlide() {
+        tituloEl.textContent = slides[indexActual].titulo;
+        descEl.textContent = slides[indexActual].desc;
+      }
+
+      btnSiguiente.addEventListener('click', () => {
+        indexActual = (indexActual + 1) % slides.length;
+        actualizarSlide();
+      });
+
+      btnAnterior.addEventListener('click', () => {
+        indexActual = (indexActual - 1 + slides.length) % slides.length;
+        actualizarSlide();
+      });
+    }
+  });
 })();
